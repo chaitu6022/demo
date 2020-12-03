@@ -1,0 +1,22 @@
+<spring>
+  <application>
+    <name>Liquibase Demo</name>
+  </application>
+  <datasource>
+    <url>jdbc:mysql://localhost:3306/liquibasedemo?serverTimezone=UTC</url>
+    <username>root</username>
+    <password>${spring.datasource.password}</password>
+    <driver-class-name>com.mysql.cj.jdbc.Driver</driver-class-name>
+  </datasource>
+  <jpa>
+    <hibernate>
+      <ddl-auto>update</ddl-auto>
+    </hibernate>
+  </jpa>
+  <liquibase>
+    <enabled>false</enabled>
+  </liquibase>
+</spring>
+<server>
+  <port>8081</port>
+</server>

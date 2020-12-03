@@ -1,0 +1,21 @@
+<spring>
+  <application>
+    <name>Liquibase Demo</name>
+  </application>
+  <datasource>
+    <url>${spring.datasource.url}</url>
+    <username>${spring.datasource.username}</username>
+    <password>${spring.datasource.password}</password>
+  </datasource>
+  <jpa>
+    <hibernate>
+      <ddl-auto>none</ddl-auto>
+    </hibernate>
+  </jpa>
+  <liquibase>
+    <enabled>false</enabled>
+  </liquibase>
+</spring>
+<server>
+  <port>8081</port>
+</server>
